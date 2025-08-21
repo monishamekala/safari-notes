@@ -1,0 +1,14 @@
+#import "CustomNoteCell.h"
+
+@implementation CustomNoteCell
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    // Initialization code
+    self.urlLabel.textColor = [UIColor systemBlueColor];
+    self.noteLabel.textColor = [UIColor darkGrayColor];
+    self.dateLabel.textColor = [UIColor lightGrayColor];
+    self.dateLabel.font = [UIFont systemFontOfSize:12];
+}
+
+@end

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- App Identity -->
+    <key>CFBundleName</key>
+    <string>Safari Notes</string>
+    <key>CFBundleDisplayName</key>
+    <string>Safari Notes</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.yourname.safarinotes</string>
+    <key>CFBundleVersion</key>
+    <string>1.0</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    
+    <!-- App Capabilities -->
+    <key>UILaunchStoryboardName</key>
+    <string>LaunchScreen</string>
+    <key>UIMainStoryboardFile</key>
+    <string>Main</string>
+    
+    <!-- Device Support -->
+    <key>UIDeviceFamily</key>
+    <array>
+        <integer>1</integer> <!-- iPhone -->
+        <integer>2</integer> <!-- iPad -->
+    </array>
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    
+    <!-- Allow HTTP (for testing in WKWebView, optional for dev) -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
+    
+    <!-- Privacy (good practice, even if minimal) -->
+    <key>NSCameraUsageDescription</key>
+    <string>Safari Notes does not use the camera.</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Safari Notes does not use the microphone.</string>
+</dict>
+</plist>
